@@ -1,0 +1,23 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/go
+{
+	"name": "Dashboarding",
+	"dockerComposeFile": "docker-compose.yaml",
+	"service": "devcontainer",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers-extra/features/k6:1": {}
+	},
+	"containerEnv": {
+		"SOME_SERVICE_HOSTNAME": "host.docker.internal"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"xcr-inc.jsonnet-formatter",
+				"grafana.vscode-jsonnet"
+			]
+		}
+	}
+}
