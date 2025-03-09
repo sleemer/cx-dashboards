@@ -72,7 +72,14 @@ In order to make it easier to get started this repo provides dev environment inc
 
 ## Running
 
-- Open integrated terminal in Visual Studio Code and run the following command there to build and deploy the dashboards to Grafana
+Open integrated terminal in Visual Studio Code and run the following commands there
+
+- Download dependencies
+```bash
+make init
+```
+
+- Build and deploy the dashboards to Grafana
 ```bash
 make publish
 ```

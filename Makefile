@@ -1,7 +1,9 @@
 .PHONY: compile publish
 
-compile:
+init:
 	@jb update
+
+compile:
 	@rm -rf /tmp/dashboards
 	@mkdir -p /tmp/dashboards
 	@for f in src/*.jsonnet; do \
