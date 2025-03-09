@@ -18,3 +18,6 @@ publish: compile
 			-d "@$$f" \
 			&& echo ""; \
 	done
+
+traffic:
+	@k6 run ./scripts/load-tests.js
