@@ -54,6 +54,9 @@ local putApiGraph = graph.new('Put API')
 dashboard.new('CX Overview Dashboard')
 + dashboard.withUid('cx-dashboard')
 + dashboard.withDescription('This is a sample customer experience overview dashboard')
++ dashboard.withRefresh('10s')
++ dashboard.withTimezone('utc')
++ dashboard.graphTooltip.withSharedCrosshair()
 + dashboard.withVariables([
   variable.datasource,
 ])
